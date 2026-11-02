@@ -364,7 +364,7 @@ footer .src{display:grid;gap:6px;margin-top:10px}
 <p class="keys">Навігація: клавіші ← → або PageUp / PageDown</p>
 </div><figure class="shot" data-slot="intro"><div class="frame"><svg class="ill" viewBox="0 0 200 170" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><circle cx="70" cy="62" r="16"/><circle cx="130" cy="62" r="16"/><path d="M40 120c0-18 14-30 30-30s30 12 30 30M100 120c0-18 14-30 30-30s30 12 30 30"/><rect x="72" y="104" width="56" height="34" rx="4"/><path d="M62 146h76"/></svg><img alt="Макет головної сторінки сайту фахового коледжу" data-src="img/intro.jpg"></div><figcaption><span>Макет: приклад головної сторінки сайту коледжу, який створимо на тренінгу</span><label class="swap">Замінити<input type="file" accept="image/*" data-slot="intro"></label></figcaption></figure></div></section>
 <section class="slide" id="speaker"><div class="wrap speaker">
-<div><div class="photo" id="photo"><img src="img/speaker.jpg" alt="Олександр Думишинець" onerror="this.remove()"><span id="initials">ОД</span><span class="badge">Спікер</span></div>
+<div><div class="photo" id="photo"><img src="img/speaker-v2.jpg" alt="Олександр Думишинець" onerror="this.remove()"><span id="initials">ОД</span><span class="badge">Спікер</span></div>
 <div class="photo-up" id="photoUp" hidden><label for="photoFile">Додати фото</label><span>зберігається в цьому браузері</span><input type="file" id="photoFile" accept="image/*"></div></div>
 <div><span class="step">Знайомство · спікер</span>
 <h2 class="sp-name">Олександр Думишинець</h2>
@@ -895,7 +895,7 @@ footer .src{display:grid;gap:6px;margin-top:10px}
     });
   });
   /* speaker photo bundled */
-  var sp=new Image();sp.onload=function(){var ph=$("photo");if(ph.querySelector("img")){$("initials").style.display="none";return;}var i=document.createElement("img");i.src="img/speaker.jpg";i.alt="Олександр Думишинець";ph.insertBefore(i,ph.firstChild);$("initials").style.display="none";$("photoUp").style.display="none";};sp.src="img/speaker.jpg";
+  var sp=new Image();sp.onload=function(){var ph=$("photo");if(ph.querySelector("img")){$("initials").style.display="none";return;}var i=document.createElement("img");i.src="img/speaker-v2.jpg";i.alt="Олександр Думишинець";ph.insertBefore(i,ph.firstChild);$("initials").style.display="none";$("photoUp").style.display="none";};sp.src="img/speaker-v2.jpg";
   /* keyboard slide navigation */
   var slides=[].slice.call(document.querySelectorAll("main .slide"));
   function current(){var y=window.scrollY+80,idx=0;slides.forEach(function(s,i){if(s.offsetTop<=y+5)idx=i;});return idx;}
